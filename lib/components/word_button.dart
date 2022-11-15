@@ -12,7 +12,6 @@ class WordButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: kWordButtonColor,
-        foregroundColor: kWordButtonColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
