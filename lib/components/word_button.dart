@@ -9,13 +9,14 @@ class WordButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
-      elevation: 3.0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: kWordButtonColor,
+        foregroundColor: kWordButtonColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
       ),
-      padding: EdgeInsets.all(4.0),
-      color: kWordButtonColor,
       onPressed: onPress,
       child: Text(
         buttonTitle,
